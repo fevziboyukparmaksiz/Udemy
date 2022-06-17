@@ -1,0 +1,52 @@
+namespace Fevzi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Not ortalaması sistemine hoşgeldiniz !");
+
+            Console.Write("İsim : ");
+            string isim = Console.ReadLine();
+            Console.Write("Soyisim : ");
+            string soyisim= Console.ReadLine();
+
+            Console.Write("Not 1 giriniz : ");
+            string not1 = Console.ReadLine();
+            Console.Write("Not 2 giriniz : ");
+            string not2 = Console.ReadLine();
+            Console.Write("Not 3 giriniz : ");
+            string not3 = Console.ReadLine();
+
+            double n1 = Convert.ToDouble(not1);
+            double n2 = Convert.ToDouble(not2);
+            double n3 = Convert.ToDouble(not3);
+
+            double ortalama = (n1 + n2+ n3) / 3;
+            Console.WriteLine("Ortalamanız : " + ortalama);
+
+            if (ortalama <45)
+            {
+                Console.WriteLine("Kaldınız ");
+            }
+            else if (ortalama >=45 && ortalama < 70)
+            {
+                Console.WriteLine("Orta ile geçtiniz ");
+            }
+            else if (ortalama >= 70 && ortalama < 90)
+            {
+                Console.WriteLine("iyi ile geçtiniz ");
+            }
+            else if (ortalama >= 90 && ortalama <= 100)
+            {
+                Console.WriteLine("Başarılı Tebrikler!!! ");
+            }
+            else if (ortalama > 100)
+            {
+                Console.WriteLine("Notlarını kontrol ediniz ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
