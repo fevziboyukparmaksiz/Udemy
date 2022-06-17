@@ -1,0 +1,40 @@
+namespace Fevzi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Kullanıcı Kodu : ");
+            string kullanıcıKodu = Console.ReadLine();
+
+            //Admin Yetkisine Sahip Kodlar:  AA, BB, CC
+            
+            //Güçlü Kullanıcı yetkisine sahip kod:  DD
+
+            //Standart kullanıcı yetkisine sahip kodlar : EE, FF ,GG
+            
+            switch (kullanıcıKodu)
+            {
+                case "AA":
+                case "BB":
+                case "CC":
+                    Console.WriteLine("Admin yetkisine sahipsiniz");
+                    break;
+                case "DD":
+                    Console.WriteLine("Güçlü kullanıcı yetkisine sahipsiniz");
+                    break;
+                case "EE":
+                case "FF":
+                case "GG":
+                    Console.WriteLine("Standart kullanıcı sahipsiniz");
+                    break;
+                default:
+                    Console.WriteLine("Hatalı Kullanıcı Kodu");
+                    break;
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
