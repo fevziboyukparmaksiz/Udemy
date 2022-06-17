@@ -1,0 +1,65 @@
+namespace Fevzi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string menü = "Menü : "+ "\n1 - Toplama " + "\n2 - Çıkarma "+ "\n3 - Çarpma " +"\n4 - Bölme ";
+            Console.WriteLine(menü);
+            Console.WriteLine("Seçim Yapınız ");
+            string seçim = Console.ReadLine();
+
+            decimal s1 = 0;
+            decimal s2 = 0;
+
+            if ( seçim == "1" || seçim == "2" || seçim == "3" || seçim == "4" )
+            {
+                Console.WriteLine("sayı 1 giriniz");
+                string sayı1 = Console.ReadLine();
+
+                Console.WriteLine("sayı 2 giriniz");
+                string sayı2 = Console.ReadLine();
+
+                s1 = Convert.ToDecimal(sayı1);
+                s2 = Convert.ToDecimal(sayı2);
+            }
+            else
+            {
+                Console.WriteLine(" Seçim dışı değer yazdınız");
+            }
+            
+
+
+            if (seçim == "1")
+            {
+                decimal sonuc = s1+s2;
+                Console.WriteLine("Toplama işlemi sonucu : "+ sonuc);
+            }
+            else if (seçim == "2")
+            {
+                decimal sonuc2 = s1-s2;
+                Console.WriteLine("Çıkarma işlemi sonucu : "+ sonuc2);
+            }
+            else if (seçim == "3")
+            {
+                decimal sonuc3 = s1*s2;
+                Console.WriteLine("Çarpma işlemi sonucu : "+ sonuc3);
+            }
+            else if (seçim == "4")
+            {
+                if (s2==0)
+                {
+                    Console.WriteLine("Bölen 0 olamaz");
+                }
+                else
+                {
+                    decimal sonuc4 = s1/s2;
+                    Console.WriteLine("Bölme işlemi sonucu : "+ sonuc4);
+                }
+            }
+            Console.WriteLine("Uygulamanın Sonu");
+            Console.ReadKey();
+        }
+    }
+}
