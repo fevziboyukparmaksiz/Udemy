@@ -1,3 +1,5 @@
+            //Kullanıcı ekran üzerinden veri girişi yapıcak. (5) Girilen sayının faktöriyeli alıncak.//
+
             Console.Write("Veri Girişi Yapınız : ");
             string veri = Console.ReadLine();
             int s1 = Convert.ToInt32(veri);
