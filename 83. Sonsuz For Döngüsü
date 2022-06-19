@@ -1,0 +1,13 @@
+int sonsuz = 0;
+
+            for (; ; )
+            {
+                sonsuz++;
+                //if (sonsuz == 2)    //index 2  olunca durur.
+                //    break;
+
+                if (sonsuz == 3)      //3 ü atlar ve yazmaya devam eder.
+                    continue;
+
+                Console.WriteLine(sonsuz);
+            }
