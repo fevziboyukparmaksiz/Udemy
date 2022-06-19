@@ -1,0 +1,10 @@
+            Console.Write("Veri Girişi Yapınız : ");
+            string veri = Console.ReadLine();
+            int s1 = Convert.ToInt32(veri);
+            int sonuc = 1;
+
+            for (int i = s1; i > 0; i--)
+            {
+                sonuc = sonuc * i ;
+            }
+            Console.WriteLine("{0} değerinin faktöriyel sonucu : {1} ", s1, sonuc);
