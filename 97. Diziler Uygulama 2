@@ -1,0 +1,23 @@
+            //Uygulama 2 : 20 elemanlı int dizi oluşturalım. Değerlerimizi random sınıfının next fonskiyonu ile  1 - 10 arasındaki değerler ile dolduralım. 
+            Daha sonra dizi içerisindeki elemanlarımızı ana ekrana yazdıralım ve ilgili dizi içerisinde kaç tane 4 değeri olduğunu bulalım.
+
+            Random Rnd = new Random();
+            int[] uygulamadizi = new int[20];
+
+            for (int uygulamasayac = 0; uygulamasayac < uygulamadizi.Length; uygulamasayac++)
+            {
+                uygulamadizi[uygulamasayac] = Rnd.Next(1, 10);
+            }
+
+            int uygulamabul = 0;
+
+            foreach (int item in uygulamadizi)
+            {
+                Console.WriteLine(item);
+                if (item == 4)
+                    uygulamabul++;
+            }
+
+            Console.WriteLine($"dizide 4 sayısı {uygulamabul} tane vardır. ");
+
+            #endregion
