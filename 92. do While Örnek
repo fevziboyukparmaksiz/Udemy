@@ -1,0 +1,17 @@
+string kullanıcıAdı = string.Empty;
+string sifre = string.Empty;
+
+do
+{
+    Console.WriteLine("Kullanıcı adı girişi yapınız. ");
+    kullanıcıAdı = Console.ReadLine();
+
+    Console.WriteLine("Şifrenizi yazınız. ");
+    sifre = Console.ReadLine();
+
+    if (kullanıcıAdı.ToLower()!= "demo" || sifre.ToLower()!= "demo") ;
+    Console.WriteLine("tekrar deneyiniz");
+
+} while (kullanıcıAdı.ToLower()!= "demo" || sifre.ToLower()!= "demo");
+
+Console.WriteLine("Kullanıcı Girişi Başarılı...");
